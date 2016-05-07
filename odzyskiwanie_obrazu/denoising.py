@@ -103,7 +103,10 @@ open_from_file()
 żeby wygenerować y, najpierw trzeba wygenerować x
 można rysować kilka wykresów na raz
 najlepiej używać w sposób:
+python3 denosing.py
+albo w trybie interaktywnym
 python3 -i denosing.py
+żeby program działał dalej, należy zamknąć okno wykresu
 
 
 parameters can be change at the beggining of the file
@@ -115,6 +118,9 @@ to generate y, it's necessary to generate x first
 it's possible draw few plots at once
 best use this way
 python3 -i denosing.py
+or in intearctive mode
+python3 -i denosing.py
+in order to proceed the program close the plot window
 '''
 
 x = generate_x()
