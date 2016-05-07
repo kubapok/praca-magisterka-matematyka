@@ -1,0 +1,14 @@
+używanie:
+python3 rysuj cytryna.jpg
+
+zdjęcie nie powinno być większe niż 800 pikseli szerokosci bo program długo się ładuje
+można przekonwertować szybko w bashu:
+convert -scale 800 image1.jpg  image2.jpg
+lub nawet mniej niż 800
+
+example usage:
+python3 rysuj cytryna.jpg
+
+if running takes too much time, try rescaling picture by executing it in bash:
+convert -scale 800 image1.jpg  image2.jpg
+or less than 800
