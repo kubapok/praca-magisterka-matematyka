@@ -23,7 +23,7 @@ sig_max_length = 30
 sig_max_height = 6
 
 #GENERATING SINGAL Y
-noise_max_height = 1
+noise_max_height = 0.5
 
 #RETRIEVING SIGNAL
 iteration_number = 100
