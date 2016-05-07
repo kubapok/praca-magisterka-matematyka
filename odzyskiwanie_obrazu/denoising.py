@@ -17,7 +17,7 @@ import csv
 import pickle
 
 #GENERATING SIGNAL X
-total_len = 700
+total_len = 200
 sig_min_length = 10
 sig_max_length = 30
 sig_max_height = 6
