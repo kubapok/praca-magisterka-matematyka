@@ -26,9 +26,9 @@ sig_max_height = 6
 noise_max_height = 0.5
 
 #RETRIEVING SIGNAL
-iteration_number = 100
+iteration_number = 1000
 alpha = 4
-lbda = 2
+lbda = 3
 
 
 def generate_x():
@@ -79,7 +79,7 @@ def get_denoised():
         b = (1/alpha)*D.dot(  (2/lbda)*y - D.transpose().dot(z_it)  ) + z_it
         for i in range(len(z_it)):
             z_it[i] = np.sign(b[i])*min(abs(b[i]),1)
-    denoised = y - D.transpose().dot(z_it)
+    denoised = y - (lbda/2)*D.transpose().dot(z_it)
     return denoised
 
 def save_to_file():
